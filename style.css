@@ -1,107 +1,89 @@
-body{
-
-font-family: 'Poppins', sans-serif;
-margin:0;
-background:#0a1a33;
-color:white;
-
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #0a1a33;
+    color: white;
 }
 
-nav{
-
-position:fixed;
-width:100%;
-background:#071226;
-padding:15px;
-text-align:center;
-
+nav {
+    position: fixed;
+    width: 100%;
+    background: #071226;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
 }
 
-nav a{
-
-color:white;
-margin:20px;
-text-decoration:none;
-font-weight:500;
-
+nav a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-header{
-
-padding-top:100px;
-text-align:center;
-padding-bottom:80px;
-
+header {
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 80px;
 }
 
-h1{
-
-font-size:50px;
-color:#66c2ff;
-
+h1 {
+    font-size: 50px;
+    color: #66c2ff;
 }
 
-section{
-
-padding:80px;
-text-align:center;
-
+section {
+    padding: 80px;
+    text-align: center;
 }
 
-.cards{
-
-display:flex;
-justify-content:center;
-gap:20px;
-
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.card{
-
-background:#132a52;
-padding:25px;
-border-radius:10px;
-width:200px;
-transition:0.3s;
-
+.card {
+    background: #132a52;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    transition: 0.3s;
 }
 
-.card:hover{
-
-transform:scale(1.05);
-
+.card:hover {
+    transform: scale(1.05);
 }
 
-button{
-
-padding:10px 20px;
-margin:10px;
-border:none;
-background:#4da6ff;
-color:white;
-border-radius:5px;
-
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: #4da6ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.fade{
-
-opacity:0;
-transform:translateY(40px);
-transition:1s;
-
+button:hover {
+    background: #3399ff;
 }
 
-.fade.show{
-
-opacity:1;
-transform:translateY(0);
-
+/* Scroll animation */
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
 }
 
-footer{
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-background:#071226;
-padding:30px;
-text-align:center;
-
+footer {
+    background: #071226;
+    padding: 30px;
+    text-align: center;
 }
