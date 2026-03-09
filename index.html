@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
 <title>Aerodynamics of Wings</title>
-
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
 
 <nav>
-
 <a href="#home">Home</a>
 <a href="#lift">Lift</a>
 <a href="#wingdesign">Wing Design</a>
@@ -22,214 +15,100 @@
 <a href="#simulator">Lift Simulator</a>
 <a href="#glossary">Glossary</a>
 <a href="#quiz">Quiz</a>
-
 </nav>
 
-
 <header id="home">
-
 <h1>Aerodynamics of Wings</h1>
-
-<p>
-Aerodynamics is the branch of physics concerned with the interaction between air and moving bodies. 
-Its principles govern how aircraft generate lift, overcome drag, and sustain controlled flight. 
-Any object travelling through the atmosphere — from a rocket at launch to a kite in steady wind — 
-is subject to aerodynamic forces.
-</p>
-
-<p>
-The design of an aircraft’s wings plays a crucial role in determining its lift, stability, 
-and overall aerodynamic efficiency.
-</p>
-
+<p>Aerodynamics is the branch of physics concerned with the interaction between air and moving bodies. Its principles govern how aircraft generate lift, overcome drag, and sustain controlled flight.</p>
+<p>The design of an aircraft’s wings plays a crucial role in determining its lift, stability, and overall aerodynamic efficiency.</p>
 </header>
 
-
 <section id="lift">
-
 <h2>What is Lift?</h2>
-
-<p>
-Lift is the upward force generated when air flows over an aircraft wing. 
-Pressure differences between the top and bottom of the wing create this force.
-</p>
-
-
+<p>Lift is the upward force generated when air flows over an aircraft wing. Pressure differences between the top and bottom of the wing create this force.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wing_profile_nomenclature.svg/500px-Wing_profile_nomenclature.svg.png" width="350">
 </section>
-
 
 <section id="wingdesign">
-
 <h2>Wing Design and Airfoils</h2>
-
 <div class="cards">
-
 <div class="card">
-
 <h3>Thickness</h3>
-
-<p>
-The thickness of a wing affects structural strength, drag, and internal space. 
-In the early 1900s Ludwig Prandtl and his research team built wind tunnels 
-to test the effects of wing thickness. They found thick wings are stronger 
-and good for low-speed aircraft, but they produce more drag at high speeds. 
-Thin wings reduce drag and are better for high-speed aircraft, but have less 
-internal space.
-</p>
-
+<p>The thickness of a wing affects structural strength, drag, and internal space. Thick wings are stronger and good for low-speed aircraft, but produce more drag at high speeds. Thin wings reduce drag for high-speed aircraft.</p>
 </div>
-
-
 <div class="card">
-
 <h3>Camber</h3>
-
-<p>
-Camber describes how curved the wing is. Early engineers such as the 
-Wright brothers tested different airfoils in wind tunnels. They found that 
-a more curved upper surface increases lift by creating a larger pressure 
-difference between the top and bottom of the wing. Higher camber therefore 
-produces more lift at lower speeds.
-</p>
-
+<p>Camber describes how curved the wing is. A more curved upper surface increases lift by creating a larger pressure difference between top and bottom.</p>
 </div>
-
-
 <div class="card">
-
 <h3>Different Airfoil Shapes</h3>
-
-<p>
-Airfoils vary in camber, thickness, and edge shape. Common types include 
-high-lift airfoils, laminar airfoils, and supersonic airfoils. High-lift 
-airfoils are highly cambered and used on low-speed aircraft. Laminar 
-airfoils reduce drag by maintaining smooth airflow. Supersonic airfoils 
-are very thin to minimise shock waves at high speeds.
-</p>
-
+<p>High-lift airfoils are cambered for low-speed aircraft. Laminar airfoils reduce drag. Supersonic airfoils are thin to reduce shock waves.</p>
 </div>
-
 </div>
-
 </section>
-
 
 <section id="wings">
-
 <h2>Types of Aircraft Wings</h2>
-
 <div class="cards">
-
 <div class="card">
-
 <h3>Swept Wings</h3>
-
 <p>Used on high-speed aircraft and fighter jets to reduce drag.</p>
-
 </div>
-
-
 <div class="card">
-
 <h3>High Aspect Ratio Wings</h3>
-
 <p>Long wings used on gliders for maximum lift and efficiency.</p>
-
 </div>
-
-
 <div class="card">
-
 <h3>Delta Wings</h3>
-
 <p>Triangular wings used on some supersonic aircraft.</p>
-
 </div>
-
 </div>
-
 </section>
-
 
 <section id="simulator">
-
 <h2>Interactive Lift Simulator</h2>
-
 <p>Move the slider to increase airflow speed.</p>
-
 <input type="range" min="1" max="100" value="50" id="speedSlider">
-
 <p id="liftOutput">Estimated Lift Force: 100</p>
-
 </section>
 
-
 <section id="glossary">
-
 <h2>Glossary</h2>
-
 <ul>
-
 <li><b>Lift</b> – Upward aerodynamic force.</li>
 <li><b>Drag</b> – Force opposing motion through air.</li>
 <li><b>Airfoil</b> – Cross-sectional shape of a wing.</li>
 <li><b>Aspect Ratio</b> – Ratio of wing span to wing width.</li>
-
 </ul>
-
 </section>
 
-
 <section id="reading">
-
 <h2>Recommended Reading</h2>
-
 <ul>
-
 <li>Introduction to Flight – John Anderson</li>
 <li>NASA Beginner’s Guide to Aerodynamics</li>
 <li>Fundamentals of Aerodynamics</li>
-
 </ul>
-
 </section>
-
 
 <section id="quiz">
-
 <h2>Quick Quiz</h2>
-
 <h3>1. What force keeps aircraft in the air?</h3>
-
 <button onclick="answer('lift')">Lift</button>
 <button onclick="answer('drag')">Drag</button>
-
-
 <h3>2. Which wing type is best for supersonic flight?</h3>
-
 <button onclick="answer2('delta')">Delta Wing</button>
 <button onclick="answer2('glider')">Glider Wing</button>
-
-
 <h3>3. What is the opposing force to lift?</h3>
-
 <button onclick="answer3('weight')">Weight</button>
 <button onclick="answer3('thrust')">Thrust</button>
-
 <p id="quizResult"></p>
-
 </section>
 
-
 <footer>
-
 <p>Created by Safiya Iqbal | Aeronautical Engineering Project</p>
-
 </footer>
 
-
 <script src="script.js"></script>
-
 </body>
-
 </html>
