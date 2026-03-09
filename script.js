@@ -3,7 +3,7 @@ let slider = document.getElementById("speedSlider");
 
 if(slider){
     slider.oninput = function(){
-        let lift = this.value * 2;
+        let lift = Math.round(this.value * 2); // Simple formula for demo
         document.getElementById("liftOutput").innerText =
             "Estimated Lift Force: " + lift + " units";
     }
