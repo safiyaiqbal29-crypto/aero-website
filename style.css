@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     color: white;
 }
 
+/* Navigation bar */
 nav {
     position: fixed;
     width: 100%;
@@ -21,6 +23,11 @@ nav a {
     font-weight: 500;
 }
 
+nav a:hover {
+    color: #66c2ff;
+}
+
+/* Header */
 header {
     padding-top: 100px;
     text-align: center;
@@ -32,11 +39,21 @@ h1 {
     color: #66c2ff;
 }
 
+/* Sections */
 section {
     padding: 80px;
     text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
 }
 
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Cards layout */
 .cards {
     display: flex;
     justify-content: center;
@@ -56,6 +73,7 @@ section {
     transform: scale(1.05);
 }
 
+/* Buttons */
 button {
     padding: 10px 20px;
     margin: 10px;
@@ -70,18 +88,7 @@ button:hover {
     background: #3399ff;
 }
 
-/* Scroll animation */
-section {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 1s;
-}
-
-section.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
+/* Footer */
 footer {
     background: #071226;
     padding: 30px;
